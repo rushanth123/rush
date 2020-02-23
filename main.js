@@ -47,16 +47,27 @@ SC.initialize({
 //    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108633175&color=%23ff5500&auto_play=true&hid
 //   e_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
+//   SC.stream('/tracks/146011935',function(sound){
+//       $('#start-c1').click(function(e) {
+//              e.preventDefault();
+//              sound.start();
+//            });
+//       $('#stop-c1').click(function(e) {
+//              e.preventDefault();
+//              sound.stop();
+//           });
+//     });
+     $(document).ready(function() {
   SC.stream('/tracks/146011935',function(sound){
-      $('#start-c1').click(function(e) {
-             e.preventDefault();
-             sound.start();
-           });
-      $('#stop-c1').click(function(e) {
-             e.preventDefault();
-             sound.stop();
-          });
-    });
+    $('#start-c1').click(function(e) {
+           e.preventDefault();
+           sound.start();
+         });
+    $('#stop-c1').click(function(e) {
+           e.preventDefault();
+           sound.stop();
+        });
+  });
 
 
 
